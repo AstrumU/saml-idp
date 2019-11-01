@@ -1,8 +1,7 @@
 {
-  "name": "saml-idp",
+  "name": "@astrumu/saml-idp",
   "description": "Test Identity Provider (IdP) for SAML 2.0 Web Browser SSO Profile",
-  "version": "1.2.0",
-  "private": false,
+  "version": "1.2.1",
   "author": "Karl McGuinness",
   "keywords": [
     "saml",
@@ -26,6 +25,7 @@
     "node": ">=6.0.0"
   },
   "dependencies": {
+    "@astrumu/samlp": "^3.4.2",
     "body-parser": "~1.18.3",
     "chalk": "^2.4.1",
     "debug": "~4.1.1",
@@ -34,7 +34,6 @@
     "extend": "^3.0.2",
     "hbs": "^4.0.4",
     "morgan": "^1.9.1",
-    "samlp": "github:mcguinness/node-samlp",
     "xml-formatter": "^1.1.0",
     "xmldom": "^0.1.27",
     "yargs": "^13.2.2"

@@ -419,7 +419,7 @@ function _runServer(argv) {
     authnContextClassRef:   argv.authnContextClassRef,
     authnContextDecl:       argv.authnContextDecl,
     includeAttributeNameFormat: true,
-    profileMapper:          SimpleProfileMapper.fromMetadata(argv.config.metadata),
+    profileMapper:          argv.profileMapper || SimpleProfileMapper.fromMetadata(argv.config.metadata),
     postEndpointPath:       IDP_PATHS.SSO,
     redirectEndpointPath:   IDP_PATHS.SSO,
     logoutEndpointPaths:    argv.sloUrl ?
@@ -821,7 +821,7 @@ function _runServer(argv) {
 
 function runServer(options) {
   const args = processArgs([], options);
-  return _runServer(args.argv);
+  return _runServer({...args.argv, config: options.config});
 }
 
 function main () {

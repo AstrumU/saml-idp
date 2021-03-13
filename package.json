@@ -36,7 +36,7 @@
     "morgan": "^1.9.1",
     "samlp": "github:astrumu/node-samlp",
     "xml-formatter": "^1.1.0",
-    "xmldom": "^0.1.27",
+    "xmldom": "^0.5.0",
     "yargs": "^13.2.2"
   }
 }

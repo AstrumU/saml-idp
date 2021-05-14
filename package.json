@@ -32,7 +32,7 @@
     "express": "^4.16.4",
     "express-session": "^1.16.1",
     "extend": "^3.0.2",
-    "hbs": "^4.0.4",
+    "hbs": "^4.1.2",
     "morgan": "^1.9.1",
     "samlp": "github:astrumu/node-samlp",
     "xml-formatter": "^1.1.0",
